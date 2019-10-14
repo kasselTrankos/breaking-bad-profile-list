@@ -27,13 +27,22 @@
 
   <body>
     <cells-demo-helper>
-      <cells-demo-case heading="Basic" description="Default specs">
+      <cells-demo-case heading="With list of items" description="With an array of 3 items">
         <template>
           <breaking-bad-profile-list></breaking-bad-profile-list>
           <script type="module">
             import data from './mock.js';
             const profileList = document.querySelector('breaking-bad-profile-list');
             profileList.cardsList = data;
+          </script>
+        </template>
+      </cells-demo-case>
+      <cells-demo-case heading="With no items" description="With an empty array of items">
+        <template>
+          <breaking-bad-profile-list></breaking-bad-profile-list>
+          <script type="module">
+            const profileList = document.querySelector('breaking-bad-profile-list');
+            profileList.cardsList = [];
           </script>
         </template>
       </cells-demo-case>
