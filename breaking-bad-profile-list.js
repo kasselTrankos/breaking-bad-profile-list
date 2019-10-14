@@ -64,7 +64,7 @@ export class BreakingBadProfileList extends LitElement {
       ? this.cardsList.map((card) => this._createCard(card))
       : html`<li>No items found :(</li>`;
   }
-  // Define a template
+
   render() {
     return html`
       <style>${this.constructor.shadyStyles}</style>
