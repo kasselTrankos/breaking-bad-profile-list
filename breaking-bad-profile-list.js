@@ -47,14 +47,14 @@ export class BreakingBadProfileList extends LitElement {
     return html`
       <breaking-bad-profile-card
         .name="${data.name}"
-        .image="${data.img}"
-        .id="${data.char_id}"
+        .image="${data.image}"
+        .id="${data.id}"
         .nickname="${data.nickname}"
         .birthday="${data.birthday}"
         .status="${data.status}"
         .occupation="${data.occupation}"
-        .playedBy="${data.portrayed}"
-        .seasons="${data.appearance}"
+        .playedBy="${data.playedBy}"
+        .seasons="${data.seasons}"
       >
       </breaking-bad-profile-card>
     `;
